@@ -4,6 +4,7 @@
   background-color: #5b7989;
   text-align: left;
   color: white;
+  display: flex;
 }
 
 #Cabecera h1{
@@ -17,4 +18,10 @@ text-align: right;
 .imagencentral{
   text-align: center;
   background-color: #82c3a6;
+}
+
+.imagenessecundarias{
+  background-color: #d5c75f;
+  display: flex;
+  border: 1px;
 }
