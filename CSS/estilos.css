@@ -10,28 +10,33 @@ body{
   color: white;
 }
 
+.titulo{
+    background-color: red;
+    width: 50%;
+}
+
 .titulo h1{
   text-shadow:2px 2px #02010a;
   display: inline;
+  margin:0;
+  padding: 0;
 }
 
 #Cabecera nav{
-  display: inline;
-  text-align: right;
-  margin-left: 40%;
+  background-color: blue;
+  right: 0;
+  padding: 0;
+  width: 50%
+
 }
 
 #Cabecera nav ul{
 list-style: none;
 margin: 0;
 padding: 0;
-display: inline;
-
-
 }
 #Cabecera nav ul li{
   margin: 0px;
-  display: inline;
 }
 .contenido{
   width: 900px;
@@ -110,7 +115,7 @@ img{
 .contenido{
   width: 100%;
 }
-.titulo h1{
+.titulo{
   width: 100%;
   text-align: center;
 
