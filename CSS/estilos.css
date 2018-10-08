@@ -1,23 +1,51 @@
-#Cabecera{
+@media (max-width:900px) {
+.contenido{
   width: 100%;
+}
+#Cabecera h1{
+  text-align: center;
+  width: 100%;
+  order: 1;
+  color: red;
+}
+
+}
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010A;
+  }
+
+#Cabecera{
   border-radius: 10px 10px 0px 0px;
   background-color: #5b7989;
-  text-align: left;
   color: white;
-  display: flex;
 }
 
 #Cabecera h1{
   text-shadow:2px 2px #02010a;
+  display: inline;
 }
 
-#Cabecera ul{
-list-style-type: none;
-text-align: right;
-display: flex;
+#Cabecera nav{
+  display: inline;
+  text-align: right;
 }
-#Cabecera ul li{
-  margin: 10px;
+
+#Cabecera nav ul{
+list-style: none;
+margin: 0;
+padding: 0;
+display: inline;
+
+
+}
+#Cabecera nav ul li{
+  margin: 0px;
+  display: inline;
+}
+.contenido{
+  width: 900px;
+  margin: auto;
 }
 .imagencentral{
   text-align: center;
@@ -32,6 +60,7 @@ display: flex;
 .izquierda img{
   transform: rotate(0deg);
   transition: transform, 1s;
+  width: 100%;
 }
 .derecha{
   flex-grow: 1;
@@ -42,6 +71,7 @@ display: flex;
 .derecha img{
   transform: translate(0px,0px);
   transition: transform,1s;
+  width: 100%;
 }
 .imagenessecundarias{
   background-color: #d5c75f;
@@ -52,8 +82,8 @@ display: flex;
 .izquierda img:hover{
   transform: rotate(10deg);
   box-shadow:2px 2px 2px #82c3a6;
-  -webkit-box-shadow:2px 2px #82c3a6;
-  -moz-box-shadow:2px 2px #82c3a6;
+  -webkit-box-shadow:2px 2px 2px #82c3a6;
+  -moz-box-shadow:2px 2px 2px #82c3a6;
 }
 
 .derecha img:hover{
@@ -68,7 +98,20 @@ footer{
   background-color: #C6d6c5;
   display: flex;
 }
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer div{
+  flex-grow: 1;
+}
+footer ul li img{
+  width: 20px;
+}
 
-footer .contacto ul{
-
+img{
+  box-shadow:2px 2px 2px #02010a;
+  -webkit-box-shadow:2px 2px 2px #02010a;
+  -moz-box-shadow:2px 2px 2px #02010a;
 }
