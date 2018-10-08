@@ -27,23 +27,29 @@ display: flex;
 .izquierda{
   flex-grow: 1;
   text-align:center;
+
+}
+.izquierda img{
   transform: rotate(0deg);
-  transition:transform 2s;
+  transition: transform, 1s;
 }
 .derecha{
   flex-grow: 1;
   text-align: center;
-  transform: translate(0px,0px);
-  transition: transform 2s;
+
 }
 
+.derecha img{
+  transform: translate(0px,0px);
+  transition: transform,1s;
+}
 .imagenessecundarias{
   background-color: #d5c75f;
   display: flex;
   border: 1px;
 }
 
-.izquierda:hover{
+.izquierda img:hover{
   transform: rotate(10deg);
   box-shadow:2px 2px 2px #82c3a6;
   -webkit-box-shadow:2px 2px #82c3a6;
@@ -53,8 +59,8 @@ display: flex;
 .derecha img:hover{
   transform: translate(20px,-5px);
   box-shadow:2px 2px 2px #82c3a6;
-  -webkit-box-shadow:2px 2px #82c3a6;
-  -moz-box-shadow:2px 2px #82c3a6;
+  -webkit-box-shadow:2px 2px 2px #82c3a6;
+  -moz-box-shadow:2px 2px 2px #82c3a6;
 }
 
 footer{
