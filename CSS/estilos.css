@@ -8,35 +8,29 @@ body{
   border-radius: 10px 10px 0px 0px;
   background-color: #5b7989;
   color: white;
+  display: flex;
 }
 
 .titulo{
-    background-color: red;
-    width: 50%;
+    flex-grow: 1;
 }
 
 .titulo h1{
   text-shadow:2px 2px #02010a;
-  display: inline;
-  margin:0;
-  padding: 0;
 }
 
 #Cabecera nav{
-  background-color: blue;
-  right: 0;
-  padding: 0;
-  width: 50%
-
+  flex-grow: 1;
 }
 
 #Cabecera nav ul{
 list-style: none;
-margin: 0;
-padding: 0;
+display: flex;
 }
 #Cabecera nav ul li{
   margin: 0px;
+  flex-grow: 1;
+  text-align: center;
 }
 .contenido{
   width: 900px;
@@ -115,10 +109,22 @@ img{
 .contenido{
   width: 100%;
 }
+
+#Cabecera{
+  flex-direction: column;
+}
 .titulo{
   width: 100%;
   text-align: center;
-
+}
+#Cabecera nav{
+  width: 100%;
 }
 
+.imagenessecundarias{
+  flex-direction: column;
+}
+footer{
+  flex-direction: column;
+}
 }
