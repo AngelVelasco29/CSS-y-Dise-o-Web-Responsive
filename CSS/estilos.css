@@ -14,6 +14,10 @@
 #Cabecera ul{
 list-style-type: none;
 text-align: right;
+display: flex;
+}
+#Cabecera ul li{
+  margin: 10px;
 }
 .imagencentral{
   text-align: center;
@@ -23,17 +27,14 @@ text-align: right;
 .izquierda{
   flex-grow: 1;
   text-align:center;
-
   transform: rotate(0deg);
   transition:transform 2s;
-
 }
 .derecha{
   flex-grow: 1;
   text-align: center;
   transform: translate(0px,0px);
   transition: transform 2s;
-
 }
 
 .imagenessecundarias{
@@ -41,21 +42,21 @@ text-align: right;
   display: flex;
   border: 1px;
 }
-<<<<<<< HEAD
 
-.izquierda img:hover{
+.izquierda:hover{
   transform: rotate(10deg);
-  box-shadow:2px 2px #82c3a6;
+  box-shadow:2px 2px 2px #82c3a6;
   -webkit-box-shadow:2px 2px #82c3a6;
   -moz-box-shadow:2px 2px #82c3a6;
 }
 
 .derecha img:hover{
   transform: translate(20px,-5px);
-  box-shadow:2px 2px #82c3a6;
+  box-shadow:2px 2px 2px #82c3a6;
   -webkit-box-shadow:2px 2px #82c3a6;
   -moz-box-shadow:2px 2px #82c3a6;
 }
+
 footer{
   border-radius: 0px 0px 10px 10px;
   background-color: #C6d6c5;
@@ -63,5 +64,5 @@ footer{
 }
 
 footer .contacto ul{
-  list-style-type: none;
+
 }
