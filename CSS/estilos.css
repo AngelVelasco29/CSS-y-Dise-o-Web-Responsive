@@ -21,6 +21,8 @@ body{
 
 h2{
   text-decoration: underline;
+  margin: 2%;
+  font-size: 1em%;
 }
 
 #Cabecera nav{
