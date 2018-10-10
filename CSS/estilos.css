@@ -37,7 +37,6 @@ display: flex;
   margin: auto;
 }
 .imagencentral{
-  text-align: center;
   background-color: #82c3a6;
 }
 .imagencentral img{
@@ -65,6 +64,7 @@ display: flex;
   background-color: #d5c75f;
   display: flex;
   border: 1px;
+  text-align: center;
 }
 
 .izquierda img:hover{
@@ -83,7 +83,7 @@ display: flex;
 
 footer{
   border-radius: 0px 0px 10px 10px;
-  background-color: #C6d6c5;
+  background-color: #C6d5c5;
   display: flex;
 }
 footer ul{
@@ -103,7 +103,26 @@ img{
   -webkit-box-shadow:2px 2px 2px #02010a;
   -moz-box-shadow:2px 2px 2px #02010a;
 }
-
+.Paisajes{
+  display: flex;
+  flex-wrap:wrap;
+}
+.Paisajes div{
+  flex-grow: 1;
+  width: 33.33%;
+}
+.Paisajes div img{
+  width: 100%;
+}
+.AplicarBlur img{
+  filter: blur(10px);
+}
+.AplicarGrises img{
+  filter: grayscale(100%);
+}
+.AplicarSepia img{
+  filter: sepia(90%);
+}
 @media (max-width:900px) {
   .contenido{
     width: 100%;
@@ -128,5 +147,11 @@ img{
   }
   footer div{
     margin: 10px;
+  }
+  .Paisajes{
+    flex-direction: column;
+  }
+  .Paisajes div{
+    width: 100%;
   }
 }
